@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .subj-button{
+            padding: 7px;
+            background-color: red;
+            color:white;
+            border:none;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+        .onof{
+            padding: 7px;
+            background-color:gray;
+            color:white;
+            border:none;
+            border-radius: 10px;
+            cursor: pointer;
+
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+    <button class="subj-button" onclick="
+    if(document.querySelector('button').innerText=='ON'){
+        document.querySelector('button').innerText='OFF'
+        document.querySelector('.subj-button').classList.add('onof')
+
+    }
+    else if(document.querySelector('button').innerText=='OFF')
+    {
+        document.querySelector('button').innerText='ON'
+        document.querySelector('.subj-button').classList.remove('onof')
+
+    }
+        
+        
+        
+        
+        
+        ">ON</button>
+    
+</body>
+</html>
